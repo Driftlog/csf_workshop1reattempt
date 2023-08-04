@@ -1,0 +1,8 @@
+<h1>Cart Items</h1>
+
+<table>
+  <tr *ngFor="let item of addedItems">
+    <td> <img src="item.image"> {{item.description}}  {{item.quantity}}</td>
+    <button (click)="deleteItem(item.description)"> Delete </button>
+  </tr>
+</table>
